@@ -45,5 +45,10 @@ The results will include all the version/tags and where the `1.7` in `jboss-eap7
 oc get is
 ----
 
+.Deploying from git
+----
+oc new-app jboss-eap70-openshift:1.7~https://github.com/craigivy/awar --name mysample
+----
+
 .Credit
 This project is based on https://blog.openshift.com/deploying-war-file-openshift-online-3/[Deploying a WAR File to OpenShift Online Next Gen]
