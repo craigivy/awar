@@ -1,6 +1,7 @@
 == awar
 Demonstrates how to expose a war file in OpenShift using EAP.
 
+.Setup
 After cloining the project run the following commands from its root directory
 
 .Login and create a new project
