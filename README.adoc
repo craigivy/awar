@@ -1,4 +1,4 @@
-== awar
+== awar - deploying a war in OpenShift
 Demonstrates how to expose a war file in OpenShift using EAP.
 
 .Setup
@@ -31,6 +31,19 @@ awar      awar-war-apps.apps.rhpds.openshift.opentlc.com             awar       
 .Open the application in a browser
 Copy the HOST/PORT address above and suffix it with  `/sample` (the war files name).
 paste this in your browser.  The example above becomes `http://awar-war-apps.apps.rhpds.openshift.opentlc.com/sample`
+
+== Additional info
+
+.Verify image stream
+----
+oc describe is jboss-eap70-openshift
+----
+The results will include all the version/tags and where the `1.7` in `jboss-eap70-openshift:1.7~. --name awar` was derived from
+
+.Listing the projects image streams
+----
+oc get is
+----
 
 .Credit
 This project is based on https://blog.openshift.com/deploying-war-file-openshift-online-3/[Deploying a WAR File to OpenShift Online Next Gen]
