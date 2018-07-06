@@ -9,7 +9,7 @@ After cloining the project run the following commands from its root directory
 $ oc login ...
 $ oc new-project war-apps
 ---- 
-.Create the jboss-eap70-openshift image stream in your project
+.Create the `jboss-eap70-openshift` image stream in your project
 ----
 $ oc create -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/eap/eap70-image-stream.json
 ----
